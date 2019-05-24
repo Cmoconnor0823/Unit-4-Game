@@ -15,17 +15,17 @@
 </head>
 
 <body>
-    <div class="bg">
+    <div class="background">
         <div class="container">
             <div class="row">
-                <div class="card">
-                    <div id="game-header">Crystal Collector!</div>
+                <div class="card bg-info"> 
+                    <div id="game-header"><h1>Crystal Collector!</h1></div>
                     <div class="card-body ">
 
-                        <h1 class="card-title">Directions: </h1>
+                        <h2 class="card-title">Directions: </h2>
                         <div class="card-text">
 
-                            <p> <img class="card-img-left img-fluid img-thumbnail" id="imageText" src=""
+                            <p> <img class="card-img-left img-fluid img-responsive" id="imageText" src="./assets/images/iconfinder_Gemstone_127301.png"
                                     alt="Responsive image"> Input game directions in detail here.
                                 Try to get creative! If this gets wordy enough use a bonus image for
                                 text to wrap around.
@@ -40,38 +40,36 @@
         <div class="container">
             <div class="card-deck">
                 <div class="row">
-                    <div class="card col-sm-12 col-md-8">
-                        <div class="card-body">
+                    <div class="container col-sm-12 col-md-8">
                             <!-- look up bootstrap button stying for an image bttn-->
                             <div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn btn-secondary">
-                                    <img class="card-img" src="./assets/images/iconfinder_Amethyst_127306.png"
+                                <button type="button" class="btn btn-outline-secondary btn-sm img-responsive">
+                                    <img class="card-img " src="./assets/images/iconfinder_Amethyst_127306.png"
                                         alt="Card image">
                                 </button>
-                                <button type="button" class="btn btn-secondary">two
-                                    <img class="card-img" src="./assets/images/iconfinder_Gemstone_127301.png"
+                                <button type="button" class="btn btn-outline-secondary btn-lg img-responsive">
+                                    <img class="card-img" src="./assets/images/iconfinder_Opal_127313.png"
                                         alt="Card image">
                                 </button>
-                                <button type="button" class="btn btn-secondary">three
+                                <button type="button" class="btn btn-outline-secondary img-responsive">
                                     <img class="card-img" src="./assets/images/iconfinder_Citrine_127311.png"
                                         alt="Card image">
                                 </button>
-                                <button type="button" class="btn btn-secondary">
+                                <button type="button" class="btn btn-outline-secondary img-responsive">
                                     <img class="card-img" src="./assets/images/iconfinder_Quartz_crystal_127307.png"
-                                        alt="Card image">four
+                                        alt="Card image">
                                 </button>
-                            </div>
                         </div>
                     </div>
 
-                    <div class="card col-sm-12 col-md-4">
+                    <div class="card bg-info text-dark col-sm-12 col-md-4">
                         <div class="card-body">
                             <!--I have a tired feeling id isnt correct here-->
                             <div id="display-box">
-                                <p id="user-choice">The user's current guess total is:</p>
-                                <p id="comp-choice"><img class="card-img-left img-fluid img-thumbnail" id="imageText"
-                                        src="./assets/images/iconfinder_Opal_127313.png" alt="Responsive image">The
-                                    computer's choice is:</p>
+                                <h4 id="user-choice">The user's current guess total is:</h4>
+                                <h4 id="comp-choice"><img class="card-img-left img-fluid" id="imageText"
+                                        src="/assets/images/iconfinder_Gemstone_127301.png" alt="Responsive image">The
+                                    computer's choice is:</h4>
                             </div>
                         </div>
                     </div>
@@ -85,14 +83,16 @@
             <div class="container">
                 <div class="card-deck">
                     <div class="row">
-                        <div class="card col-sm-6 col-md-12">
+                        <div class="card bg-info text-dark col-sm-6">
                             <div id="wins-box">
-                                <p>Wins:</p>
+                                <h1>Wins:</h1>
+                                 <p>This box needs a set size</p>
                             </div>
                         </div>
-                        <div class="card col-sm-6 col-md-12">
+                        <div class="card bg-info text-dark col-sm-6">
                             <div id="loss-box">
-                                <p>Losses:</p>
+                                <h1>Losses: </h1>
+                                <p>so does this one or we eed to make the background translucent</p>
                             </div>
                         </div>
                     </div>
@@ -109,5 +109,6 @@
     </div>
 
 </body>
+<script src="assets/javaScript/game.js"></script>
 
 </html>
