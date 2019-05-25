@@ -20,3 +20,23 @@ var lossesText = document.getElementById("losses-text");
 var compChoice = document.getElementById ("comp-choice");
 
 
+// Code to make the computer randomly select a number 
+// between 19 and 120. make this number print on page load
+// check with a console log
+
+//Code to make each button pick a different number for 
+//each new game. print these to the console log
+
+//code to capture button clicks
+
+//code to compare button clicks to computer guess
+
+//if win statement
+
+//if continue game
+
+//if loss
+
+//record win or loss then restart game with new 
+// randomly chosen values for both the comp
+// and the buttons
