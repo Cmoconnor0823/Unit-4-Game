@@ -5,8 +5,9 @@ var wins = 0;
 var losses = 0;
 /*create 4 different undefined 
 variables linked to the button clicks*/
-var randomNumArr = [];
+var randomNumArr = [];//this array correctly has 4 number values
 var bttnOne;
+console.log(bttnOne,"bttnOne")
 var bttnTwo;
 var bttnThree;
 var bttnFour;
@@ -27,7 +28,7 @@ var compChoice = document.getElementById ("comp-choice");
 
 var compGuess = Math.floor(Math.random() * 101 )+ 19;
   
-  console.log(compGuess)
+  console.log(compGuess, "compGuess")
 
 //make this number print on page load 
 //*****bonus load in image as well***
@@ -38,15 +39,12 @@ compChoice.innerHTML ="The computer's choice is: " + compGuess;
 for(var i = 0; i < 4 ; i++){
     var randomNum = Math.floor(Math.random() *11) + 1;
     randomNumArr.push(randomNum)
+    
 }
 //this console log lists the last number generated for the array
-console.log(randomNum);
+console.log(randomNum, "randomNum");
 //this console log correctly lists 4 random numbers between 1 and 12
-console.log(randomNumArr)
-
-
-//print these to the console log
-
+console.log(randomNumArr, "randomNumArr")
 
 //code to stick each value to a different button
 
