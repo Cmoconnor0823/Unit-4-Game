@@ -1,10 +1,11 @@
-//This is set undefined to capture the computer's guess
-var compGuess;
+//This is set undefined to capture the computer's guess may be extra could create var when creating value
+//var compGuess;
 
 var wins = 0;
 var losses = 0;
 /*create 4 different undefined 
 variables linked to the button clicks*/
+var randomNumArr = [];
 var bttnOne;
 var bttnTwo;
 var bttnThree;
@@ -21,13 +22,37 @@ var compChoice = document.getElementById ("comp-choice");
 
 
 // Code to make the computer randomly select a number 
-// between 19 and 120. make this number print on page load
+// between 19 and 120.
 // check with a console log
 
-//Code to make each button pick a different number for 
-//each new game. print these to the console log
+var compGuess = Math.floor(Math.random() * 101 )+ 19;
+  
+  console.log(compGuess)
 
-//code to capture button clicks
+//make this number print on page load 
+//*****bonus load in image as well***
+compChoice.innerHTML ="The computer's choice is: " + compGuess;
+
+//Code to generate 4 random values between 1 and 12 
+//loop????
+for(var i = 0; i < 4 ; i++){
+    var randomNum = Math.floor(Math.random() *11) + 1;
+    randomNumArr.push(randomNum)
+}
+//this console log lists the last number generated for the array
+console.log(randomNum);
+//this console log correctly lists 4 random numbers between 1 and 12
+console.log(randomNumArr)
+
+
+//print these to the console log
+
+
+//code to stick each value to a different button
+
+
+//code to capture user button clicks and add number to user guess
+
 
 //code to compare button clicks to computer guess
 
