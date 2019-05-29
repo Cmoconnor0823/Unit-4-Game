@@ -6,14 +6,9 @@ var losses = 0;
 /*create 4 different undefined 
 variables linked to the button clicks*/
 var randomNumArr = [];//this array correctly has 4 number values
-var bttnOne;
-console.log(bttnOne,"bttnOne")
-var bttnTwo;
-var bttnThree;
-var bttnFour;
 /* create variable to hold the total value of 
 the user's button cicks*/
-var userClick;
+var userTotal = 0;
 
 
 //var to print to HTML
@@ -48,10 +43,39 @@ console.log(randomNumArr, "randomNumArr")
 
 //code to stick each value to a different button
 
+var bttnOne = randomNumArr[0];
+console.log(bttnOne,"bttnOne")
+var bttnTwo = randomNumArr[1];
+console.log(bttnTwo,"bttnTwo")
+var bttnThree = randomNumArr[2];
+console.log(bttnThree,"bttnThree")
+var bttnFour = randomNumArr[3];
+console.log(bttnFour,"bttnFour")
 
 //code to capture user button clicks and add number to user guess
+$("#buttonOne").on("click", function(){
+    userTotal = userTotal + bttnOne;
+    console.log(userTotal, "adding first button")
 
+});
 
+$("#buttonTwo").on("click", function(){
+    userTotal = userTotal + bttnTwo;
+    console.log(userTotal, "adding second button")
+
+});
+
+$("#buttonThree").on("click", function(){
+    userTotal = userTotal + bttnThree;
+    console.log(userTotal, "adding third button")
+
+});
+
+$("#buttonFour").on("click", function(){
+    userTotal = userTotal + bttnFour;
+    console.log(userTotal,"adding fourth button")
+
+});
 //code to compare button clicks to computer guess
 
 //if win statement
