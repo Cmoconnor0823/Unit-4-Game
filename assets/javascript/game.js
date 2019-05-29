@@ -57,37 +57,49 @@ console.log(bttnFour,"bttnFour")
 $("#buttonOne").on("click", function(){
     userTotal = userTotal + bttnOne;
     console.log(userTotal, "adding first button")
-    userChoice.innerHTML ="Your current guess total is: " + userTotal;
+    gameEvent ();
 
 });
 
 $("#buttonTwo").on("click", function(){
     userTotal = userTotal + bttnTwo;
     console.log(userTotal, "adding second button")
-    userChoice.innerHTML ="Your current guess total is: " + userTotal;
-
+    gameEvent ();
 });
 
 $("#buttonThree").on("click", function(){
     userTotal = userTotal + bttnThree;
     console.log(userTotal, "adding third button")
-    userChoice.innerHTML ="Your current guess total is: " + userTotal;
+    gameEvent ();
 
 });
 
 $("#buttonFour").on("click", function(){
     userTotal = userTotal + bttnFour;
     console.log(userTotal,"adding fourth button")
-    userChoice.innerHTML ="Your current guess total is: " + userTotal;
+    gameEvent ();
 
 });
 //code to compare button clicks to computer guess
-
-//if win statement
-
 //if continue game
+function gameEvent(){
+    if (userTotal < compGuess)
+    userChoice.innerHTML ="Your current guess total is: " + userTotal;
+    console.log (userTotal,"userTotal")
 
 //if loss
+    if(userTotal > compGuess)
+    losses++;
+    lossesText.innerHTML ="Your current loss total is: " + losses;
+    console.log (losses, "losses")
+    //restart();
+//if win
+if(userTotal== compGuess)
+    wins++;
+    winText.innerHTML ="Your current win total is: " + wins;
+    console.log (wins, "wins")
+    //restart();
+}
 
 //record win or loss then restart game with new 
 // randomly chosen values for both the comp
