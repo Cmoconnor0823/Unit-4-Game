@@ -15,6 +15,7 @@ var userTotal = 0;
 var winText = document.getElementById("win-text");
 var lossesText = document.getElementById("losses-text");
 var compChoice = document.getElementById ("comp-choice");
+var userChoice = document.getElementById ("user-choice");
 
 
 // Code to make the computer randomly select a number 
@@ -56,24 +57,28 @@ console.log(bttnFour,"bttnFour")
 $("#buttonOne").on("click", function(){
     userTotal = userTotal + bttnOne;
     console.log(userTotal, "adding first button")
+    userChoice.innerHTML ="Your current guess total is: " + userTotal;
 
 });
 
 $("#buttonTwo").on("click", function(){
     userTotal = userTotal + bttnTwo;
     console.log(userTotal, "adding second button")
+    userChoice.innerHTML ="Your current guess total is: " + userTotal;
 
 });
 
 $("#buttonThree").on("click", function(){
     userTotal = userTotal + bttnThree;
     console.log(userTotal, "adding third button")
+    userChoice.innerHTML ="Your current guess total is: " + userTotal;
 
 });
 
 $("#buttonFour").on("click", function(){
     userTotal = userTotal + bttnFour;
     console.log(userTotal,"adding fourth button")
+    userChoice.innerHTML ="Your current guess total is: " + userTotal;
 
 });
 //code to compare button clicks to computer guess
