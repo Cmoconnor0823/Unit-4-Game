@@ -17,6 +17,18 @@ var lossesText = document.getElementById("losses-text");
 var compChoice = document.getElementById ("comp-choice");
 var userChoice = document.getElementById ("user-choice");
 
+var restart = function () {
+    userTotal = 0;
+    userChoice.innerHTML ="Your current guess total is: " + userTotal;
+    var compGuess = Math.floor(Math.random() * 101 )+ 19;
+    compChoice.innerHTML ="The computer's choice is: " + compGuess;
+    for(var i = 0; i < 4 ; i++){
+        var randomNum = Math.floor(Math.random() *11) + 1;
+        randomNumArr.push(randomNum)
+    }
+
+}
+
 
 // Code to make the computer randomly select a number 
 // between 19 and 120.
@@ -82,25 +94,35 @@ $("#buttonFour").on("click", function(){
 });
 //code to compare button clicks to computer guess
 //if continue game
+
+//using an else if breaks my game thought this was needed to get the restart to work
 function gameEvent(){
+    
+        
     if (userTotal < compGuess)
     userChoice.innerHTML ="Your current guess total is: " + userTotal;
-    console.log (userTotal,"userTotal")
+    console.log (userTotal,"userTotal");
+    
+    //if win
+     if (userTotal === compGuess) {
+        wins++;
+        winText.innerHTML ="Your current win total is: " + wins;
+        console.log (wins, "wins");
+        restart();
+     }
+    
 
 //if loss
-    if(userTotal > compGuess)
-    losses++;
-    lossesText.innerHTML ="Your current loss total is: " + losses;
-    console.log (losses, "losses")
-    //restart();
-//if win
-if(userTotal== compGuess)
-    wins++;
-    winText.innerHTML ="Your current win total is: " + wins;
-    console.log (wins, "wins")
-    //restart();
-}
+     if (userTotal > compGuess) {
+        losses++;
+        lossesText.innerHTML ="Your current loss total is: " + losses;
+        console.log (losses, "losses")
+        restart();
+     }
+    
+};
 
-//record win or loss then restart game with new 
+
+//restart game with new 
 // randomly chosen values for both the comp
 // and the buttons
