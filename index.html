@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Collector Game</title>
     <!-- Added link to the jQuery Library -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--link to reset sheet-->
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <!--Link to external CSS Style sheet-->
@@ -20,15 +20,18 @@
     <div class="background">
         <div class="container">
             <div class="row">
-                <div class="card bg-info"> 
-                    <div id="game-header"><h1>Crystal Collector!</h1></div>
+                <div class="card bg-info">
+                    <div id="game-header">
+                        <h1>Crystal Collector!</h1>
+                    </div>
                     <div class="card-body ">
 
                         <h2 class="card-title">Directions: </h2>
                         <div class="card-text">
 
-                            <p> <img class="card-img-left img-fluid img-responsive" id="imageText" src="./assets/images/iconfinder_Gemstone_127301.png"
-                                    alt="Responsive image"> Input game directions in detail here.
+                            <p> <img class="card-img-left img-fluid img-responsive" id="imageText"
+                                    src="./assets/images/iconfinder_Gemstone_127301.png" alt="Responsive image"> Input
+                                game directions in detail here.
                                 Try to get creative! If this gets wordy enough use a bonus image for
                                 text to wrap around.
                             </p>
@@ -39,28 +42,30 @@
         </div>
         <br><br>
 
+
         <div class="container">
             <div class="card-deck">
                 <div class="row">
                     <div class="container col-sm-12 col-md-8">
-                            <!-- look up bootstrap button stying for an image bttn-->
-                            <div class="btn-group" role="group" aria-label="Basic example">
-                                <button id="buttonOne" type="button" class="btn btn-outline-secondary btn-sm img-responsive">
-                                    <img class="card-img " src="./assets/images/iconfinder_Amethyst_127306.png"
-                                        alt="Card image">
-                                </button>
-                                <button id="buttonTwo" type="button" class="btn btn-outline-secondary btn-lg img-responsive">
-                                    <img class="card-img" src="./assets/images/iconfinder_Opal_127313.png"
-                                        alt="Card image">
-                                </button>
-                                <button id="buttonThree" type="button" class="btn btn-outline-secondary img-responsive">
-                                    <img class="card-img" src="./assets/images/iconfinder_Citrine_127311.png"
-                                        alt="Card image">
-                                </button>
-                                <button id="buttonFour" type="button" class="btn btn-outline-secondary img-responsive">
-                                    <img class="card-img" src="./assets/images/iconfinder_Quartz_crystal_127307.png"
-                                        alt="Card image">
-                                </button>
+                        <!-- look up bootstrap button stying for an image bttn-->
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button id="buttonOne" type="button"
+                                class=" btn btn-outline-secondary btn-sm img-responsive">
+                                <img class="card-img " src="./assets/images/iconfinder_Amethyst_127306.png"
+                                    alt="Card image">
+                            </button>
+                            <button id="buttonTwo" type="button"
+                                class="btn btn-outline-secondary btn-lg img-responsive">
+                                <img class="card-img" src="./assets/images/iconfinder_Opal_127313.png" alt="Card image">
+                            </button>
+                            <button id="buttonThree" type="button" class="btn btn-outline-secondary img-responsive">
+                                <img class="card-img" src="./assets/images/iconfinder_Citrine_127311.png"
+                                    alt="Card image">
+                            </button>
+                            <button id="buttonFour" type="button" class="btn btn-outline-secondary img-responsive">
+                                <img class="card-img" src="./assets/images/iconfinder_Quartz_crystal_127307.png"
+                                    alt="Card image">
+                            </button>
                         </div>
                     </div>
 
@@ -71,7 +76,8 @@
                                 <h4 id="user-choice">The user's current guess total is:</h4>
                                 <h4 id="comp-choice">
                                     <!--it would be better to print this image with in the java page<img class="card-img-left img-fluid" id="imageText"
-                                        src="/assets/images/iconfinder_Gemstone_127301.png" alt="Responsive image">--></h4>
+                                        src="/assets/images/iconfinder_Gemstone_127301.png" alt="Responsive image">-->
+                                </h4>
                             </div>
                         </div>
                     </div>
@@ -80,29 +86,49 @@
         </div>
 
 
-            <br><br>
+        <br><br>
 
-            <div class="container">
-                <div class="card-deck">
-                    <div class="row">
-                        <div class="card bg-info text-dark col-sm-6">
-                            <div id="wins-box">
-                                <h1 id="win-text">Your current Win total is:</h1>
-                                 <p>This box needs a set size</p>
-                            </div>
+        <div class="container">
+            <div class="card-deck">
+                <div class="row">
+                    <div class="card bg-info text-dark col-sm-4">
+                        <div id="wins-box">
+                            <h1 id="win-text">Your current Win total is:</h1>
+                            <p>This box needs a set size</p>
                         </div>
-                        <div class="card bg-info text-dark col-sm-6">
-                            <div id="loss-box">
-                                <h1 id="losses-text">Your current loss total is: </h1>
-                                <p></p>
-                            </div>
+                    </div>
+                    <div class="card bg-info text-dark col-sm-4">
+                        <div id="loss-box">
+                            <h1 id="losses-text">Your current loss total is: </h1>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="card bg-info text-dark col-sm-4">
+                        <div id="music-layer">
+                            <h1 id="music-text">Control the music here: </h1>
+                            <p>
+
+                                <audio id="player" src="./assets/sounds/Dreams_Electric.mp3"></audio>
+                                <div>
+                                    <button id="play" type="button"
+                                        class=" btn btn-pill btn-secondary btn-sm img-responsive"
+                                        onclick="document.getElementById('player').play()">Play</button>
+                                    <button id="pause" type="button"
+                                        class=" btn btn-pill btn-secondary btn-sm img-responsive"
+                                        onclick="document.getElementById('player').pause()">Pause</button>
+                                    <button id="vol-Up" type="button"
+                                        class=" btn btn-pill btn-secondary btn-sm img-responsive"
+                                        onclick="document.getElementById('player').volume += 0.1">Vol+ </button>
+                                    <button id="vol-Down" type="button"
+                                        class=" btn btn-pill btn-secondary btn-sm img-responsive"
+                                        onclick="document.getElementById('player').volume -= 0.1">Vol- </button>
+                                </div>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-    
+        </div>
 
 
 
