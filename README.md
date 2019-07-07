@@ -12,7 +12,7 @@ It is possible for all even numbers to be chosen for the user's button options,
 while the computer can still guess an odd number, thus making it impossible to meet the win condition.
 
 
-Made using JavaScript, CSS, and Bootstrap.
+Made using HTML, JavaScript, CSS, and Bootstrap.
 an optional styling touch- a playable song and controls at the bottom of the screen.
 
 For comments/ concerns email Caitlin O'Connor @ Cmoconnor0823@gmail.com
